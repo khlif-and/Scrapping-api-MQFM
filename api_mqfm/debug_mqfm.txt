@@ -1,0 +1,31 @@
+--- POST 0 ---
+TITLE: 
+FOUND WRAPPER HTML:
+<div class="anwp-pg-post-teaser__thumbnail position-relative mb-2 mb-md-0 anwp-col-md-4">
+ <img decoding="async" loading="lazy" src="https://mqfmnetwork.com/wp-content/uploads/2026/02/Perkuat-Spirit-Perjuangan-Palestina-DT-Peduli-Gelar-Dauroh-Ilmiah-Internasional-2.jpg-160x120.jpeg"/>
+ <div class="anwp-pg-post-teaser__thumbnail-classic-bg anwp-position-cover">
+ </div>
+ <a aria-hidden="true" class="anwp-position-cover anwp-link-without-effects" href="https://mqfmnetwork.com/perkuat-spirit-perjuangan-palestina-dt-peduli-gelar-dauroh-ilmiah-internasional/">
+ </a>
+</div>
+
+--- POST 1 ---
+TITLE: Perkuat Spirit Perjuangan Palestina, DT Peduli Gelar Dauroh Ilmiah Internasional
+FOUND WRAPPER HTML:
+<div class="anwp-pg-post-teaser__title anwp-font-heading my-2">
+ <a aria-hidden="true" class="anwp-link-without-effects" href="https://mqfmnetwork.com/perkuat-spirit-perjuangan-palestina-dt-peduli-gelar-dauroh-ilmiah-internasional/">
+  Perkuat Spirit Perjuangan Palestina, DT Peduli Gelar Dauroh Ilmiah Internasional
+ </a>
+</div>
+
+--- POST 2 ---
+TITLE: 
+FOUND WRAPPER HTML:
+<div class="anwp-pg-post-teaser__thumbnail position-relative mb-2 mb-md-0 anwp-col-md-4">
+ <img decoding="async" loading="lazy" src="https://mqfmnetwork.com/wp-content/uploads/2026/02/Pemerintah-Diminta-Libatkan-Desa-dalam-Pengambilan-Keputusan-160x120.jpeg"/>
+ <div class="anwp-pg-post-teaser__thumbnail-classic-bg anwp-position-cover">
+ </div>
+ <a aria-hidden="true" class="anwp-position-cover anwp-link-without-effects" href="https://mqfmnetwork.com/pemerintah-diminta-libatkan-desa-dalam-pengambilan-keputusan/">
+ </a>
+</div>
+

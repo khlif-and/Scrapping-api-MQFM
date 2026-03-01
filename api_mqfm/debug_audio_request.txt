@@ -1,0 +1,180 @@
+
+======== PAGE: https://mqfmnetwork.com/cahaya-tauhiid-kh-abdullah-gymnastiar/ ========
+POST_ID: 7267
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7267&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a4209a28b87 = {"title":"","store_title_text":"","albums":"7267","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/inspirasi-shalat-ustadz-budi-prayitno/ ========
+POST_ID: 7341
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7341&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a4209d57eb9 = {"title":"","store_title_text":"","albums":"7341","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/kajian-kitab-kaifa-tahfadzul-quran-kh-hery-saparjan-mursi/ ========
+POST_ID: 7352
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7352&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a420a193505 = {"title":"","store_title_text":"","albums":"7352","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/solusi-quran/ ========
+POST_ID: 7362
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7362&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a420a4d0343 = {"title":"","store_title_text":"","albums":"7362","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/tips-sehat-islami/ ========
+POST_ID: 7376
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7376&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a420a84fcd1 = {"title":"","store_title_text":"","albums":"7376","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/kajian-kitab-at-tibyan/ ========
+POST_ID: 9868
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=9868&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a420ab4cee0 = {"title":"","store_title_text":"","albums":"9868","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/cahaya-tauhiid-kh-abdullah-gymnastiar/ ========
+POST_ID: 7267
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7267&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a4219c2ee0d = {"title":"","store_title_text":"","albums":"7267","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/inspirasi-shalat-ustadz-budi-prayitno/ ========
+POST_ID: 7341
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7341&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a4219d53f4f = {"title":"","store_title_text":"","albums":"7341","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/kajian-kitab-kaifa-tahfadzul-quran-kh-hery-saparjan-mursi/ ========
+POST_ID: 7352
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7352&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a4219f22133 = {"title":"","store_title_text":"","albums":"7352","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/solusi-quran/ ========
+POST_ID: 7362
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7362&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a421a183e8e = {"title":"","store_title_text":"","albums":"7362","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/tips-sehat-islami/ ========
+POST_ID: 7376
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=7376&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a421a36b891 = {"title":"","store_title_text":"","albums":"7376","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
+
+======== PAGE: https://mqfmnetwork.com/kajian-kitab-at-tibyan/ ========
+POST_ID: 9868
+PLAYLIST_URL: https://mqfmnetwork.com/?load=playlist.json&albums=9868&feed=1
+PLAYLIST_RESPONSE: 
+--- HTML FRAGMENTS (LOOKING FOR MP3) ---
+SCRIPT_MATCH:
+
+        var srp_player_params_69a421a80706d = {"title":"","store_title_text":"","albums":"9868","hide_artwork":"false","sticky_player":"","show_album_market":"true","show_track_market":"true","hide_timeline":"false","elementor":"true","tracks_per_page":"","titletag_soundwave":"div","titletag_playlist":"h3","show_control_on_hover":"false","show_playlist":"true","reverse_tracklist":"","wave_color":"","wave_progress_color":"","spectro":"","shuffle":"","searchbar":"","searchbar_placeholder":"","pla...
+SCRIPT_MATCH:
+
+/* <![CDATA[ */
+var sonaar_music = {"plugin_version_free":"5.11","plugin_dir_url_free":"\/home\/mqfmnetw\/public_html\/wp-content\/plugins\/mp3-music-player-by-sonaar\/","plugin_version_pro":"Not Installed","plugin_dir_url":"https:\/\/mqfmnetwork.com\/wp-content\/plugins\/mp3-music-player-by-sonaar\/public\/","option":{"player_type":"classic","player_widget_type":"skin_boxed_tracklist","srmp3_posttypes":["sr_playlist"],"waveformType":"mediaElement","playback_speed":"0.5, 1, 1.2, 1.5, 2","collap...
+AUDIO_TAGS: [<audio class="sonaar_media_element" src=""></audio>, <audio controls="" src="https://mqfmstreaming.kamil.web.id/;"></audio>]
+DIRECT_MP3_LINKS: []
