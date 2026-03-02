@@ -21,7 +21,7 @@ IMG 3:
 IMG 4:
   SRC: https://mqfmnetwork.com/wp-content/uploads/2023/10/Produser48-768x1365.jpg
   ALT: Produser(48)
-  TITLE_ATTR: Nonecan 
+  TITLE_ATTR: None
 
 IMG 5:
   SRC: https://mqfmnetwork.com/wp-content/uploads/2023/10/Produser49-768x1365.jpg
