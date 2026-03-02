@@ -1,15 +1,19 @@
 import requests
+import os
+from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from typing import List
-from models.program_model import ProgramOnAirModel
+from entities.program_entity import ProgramEntity
+
+load_dotenv()
 
 class ProgramService:
     @staticmethod
-    def scrape_program_on_air() -> List[ProgramOnAirModel]:
-        url = 'https://mqfmnetwork.com/'
+    def scrape_program_on_air() -> List[ProgramEntity]:
+        url = os.getenv('MQFM_URL')
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept-Encoding': 'gzip, deflate'
+            'User-Agent': os.getenv('USER_AGENT'),
+            'Accept-Encoding': os.getenv('ACCEPT_ENCODING')
         }
         
         response = requests.get(url, headers=headers)
@@ -43,7 +47,7 @@ class ProgramService:
                 filename = src.split('/')[-1]
                 title = filename.replace('-', ' ').replace('.png', '').replace('.jpg', '').strip()
             
-            programs.append(ProgramOnAirModel(
+            programs.append(ProgramEntity(
                 title=title,
                 image_url=src
             ))

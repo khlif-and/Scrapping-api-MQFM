@@ -2,24 +2,28 @@ import logging
 import requests
 from fastapi import APIRouter, HTTPException
 from services.program_service import ProgramService
-from models.program_model import ProgramOnAirResponse
-from redis_client import get_cache, set_cache
+from resources.program_resource import ProgramResource, ProgramItemResource
+from repositories.program_repository import ProgramRepository
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
-@router.get("/programs", response_model=ProgramOnAirResponse)
+@router.get("/programs", response_model=ProgramResource)
 def get_programs_on_air():
     try:
-        cache_key = "programs_on_air"
-        cached_data = get_cache(cache_key)
+        cached_data = ProgramRepository.get_cached_programs()
         if cached_data:
             return cached_data
 
         programs = ProgramService.scrape_program_on_air()
-        response_data = ProgramOnAirResponse(programs=programs)
-        set_cache(cache_key, response_data.model_dump(), ex=3600)
-        return response_data
+        
+        resource_data = ProgramResource(
+            programs=[ProgramItemResource(title=p.title, image_url=p.image_url) for p in programs]
+        )
+        
+        ProgramRepository.set_cached_programs(resource_data.model_dump())
+        
+        return resource_data
     except requests.exceptions.ConnectionError as e:
         logger.error(f"Error koneksi internet saat mengambil Program On Air: {e}")
         raise HTTPException(status_code=503, detail="Gagal menghubungi server MQFM. Pastikan internet Anda aktif.")
