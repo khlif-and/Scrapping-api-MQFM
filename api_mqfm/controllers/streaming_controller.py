@@ -3,6 +3,7 @@ import requests
 from fastapi import APIRouter, HTTPException
 from services.streaming_service import StreamingService
 from models.streaming_model import StreamingInfo
+from redis_client import get_cache, set_cache
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -10,7 +11,13 @@ logger = logging.getLogger(__name__)
 @router.get("/streaming", response_model=StreamingInfo)
 def get_streaming_data():
     try:
+        cache_key = "streaming_data"
+        cached_data = get_cache(cache_key)
+        if cached_data:
+            return cached_data
+
         data = StreamingService.scrape_streaming_data()
+        set_cache(cache_key, data.model_dump(), ex=3600)
         return data
     except requests.exceptions.ConnectionError as e:
         logger.error(f"Error koneksi internet saat memuat jadwal: {e}")

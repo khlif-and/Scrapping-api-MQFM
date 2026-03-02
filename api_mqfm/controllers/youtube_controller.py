@@ -3,6 +3,7 @@ import requests
 from fastapi import APIRouter, HTTPException
 from services.youtube_service import YoutubeService
 from models.youtube_model import YoutubeStreamInfo
+from redis_client import get_cache, set_cache
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -10,6 +11,11 @@ logger = logging.getLogger(__name__)
 @router.get("/youtube-streaming", response_model=YoutubeStreamInfo)
 def get_youtube_streaming():
     try:
+        cache_key = "youtube_streaming"
+        cached_data = get_cache(cache_key)
+        if cached_data:
+            return cached_data
+
         data = YoutubeService.scrape_youtube_stream()
         
         # Cek apakah youtube livestream sedang tidak aktif
@@ -17,6 +23,7 @@ def get_youtube_streaming():
             logger.info("Siaran Live Streaming YouTube saat ini sedang tidak aktif atau sudah selesai.")
             raise HTTPException(status_code=404, detail="Live Streaming YouTube saat ini tidak tersedia atau sudah selesai.")
             
+        set_cache(cache_key, data.model_dump(), ex=3600)
         return data
     except HTTPException as e:
         # Biarkan pesan 404 "Tidak aktif" keluar dengan benar

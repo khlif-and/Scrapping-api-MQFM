@@ -3,6 +3,7 @@ import requests
 from fastapi import APIRouter, HTTPException
 from services.mqfm_service import MqfmService
 from models.mqfm_model import MqfmData
+from redis_client import get_cache, set_cache
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -10,7 +11,13 @@ logger = logging.getLogger(__name__)
 @router.get("/mqfm", response_model=MqfmData)
 def get_mqfm_data():
     try:
+        cache_key = "mqfm_data"
+        cached_data = get_cache(cache_key)
+        if cached_data:
+            return cached_data
+
         data = MqfmService.scrape_data()
+        set_cache(cache_key, data.model_dump(), ex=3600)
         return data
     except requests.exceptions.ConnectionError as e:
         logger.error(f"Error koneksi internet atau server MQFM down: {e}")
