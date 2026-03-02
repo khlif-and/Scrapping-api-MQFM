@@ -1,0 +1,70 @@
+IMG 0:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-20-at-11.39.08.jpeg
+  ALT: WhatsApp Image 2026-02-20 at 11.39.08
+  TITLE_ATTR: None
+
+IMG 1:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2023/10/Produser46-768x1365.jpg
+  ALT: Inspirasi Akhir Pekan - Ustadz Budi Prayitno
+  TITLE_ATTR: None
+
+IMG 2:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2023/10/Produser47-768x1365.jpg
+  ALT: Produser(47)
+  TITLE_ATTR: None
+
+IMG 3:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2023/10/Produser1-768x1365.png
+  ALT: Produser(1)
+  TITLE_ATTR: None
+
+IMG 4:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2023/10/Produser48-768x1365.jpg
+  ALT: Produser(48)
+  TITLE_ATTR: Nonecan 
+
+IMG 5:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2023/10/Produser49-768x1365.jpg
+  ALT: Produser(49)
+  TITLE_ATTR: None
+
+IMG 6:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2025/12/Promo-Program-2025-Website31-768x768.png
+  ALT: Promo Program 2025 Website(3)(1)
+  TITLE_ATTR: None
+
+IMG 7:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2025/12/Promo-Program-2025-Website11-768x768.png
+  ALT: Promo Program 2025 Website(1)(1)
+  TITLE_ATTR: None
+
+IMG 8:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2025/12/Promo-Program-2025-Website21-768x768.png
+  ALT: Promo Program 2025 Website(2)(1)
+  TITLE_ATTR: None
+
+IMG 9:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2025/12/Promo-Program-2025-Website5-768x768.png
+  ALT: Promo Program 2025 Website(5)
+  TITLE_ATTR: None
+
+IMG 10:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2025/12/Promo-Program-2025-Website41-1-768x768.png
+  ALT: Promo Program 2025 Website(4)(1)
+  TITLE_ATTR: None
+
+IMG 11:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2025/12/Screen-Shot-2025-12-02-at-15.40.28-300x300.png
+  ALT: Screen Shot 2025-12-02 at 15.40.28
+  TITLE_ATTR: None
+
+IMG 12:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2025/12/Screen-Shot-2025-12-02-at-15.41.15-300x300.png
+  ALT: Screen Shot 2025-12-02 at 15.41.15
+  TITLE_ATTR: None
+
+IMG 13:
+  SRC: https://mqfmnetwork.com/wp-content/uploads/2026/02/IG-Feed-Nusantara-Prestige-02-1.jpg-300x300.jpeg
+  ALT: IG Feed-Nusantara-Prestige-02 (1).jpg
+  TITLE_ATTR: None
+

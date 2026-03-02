@@ -1,0 +1,5 @@
+Date: 2/3/2026
+Time: 12:10
+Phone Number: +628123456789
+Message: *[MQFM API]*Kode OTP Anda adalah *440445*.Berlaku selama 5 menit. Jangan berikan kode ini ke siapapun.
+--------------------

@@ -5,6 +5,7 @@ from controllers.program_controller import router as program_router
 from controllers.streaming_controller import router as streaming_router
 from controllers.youtube_controller import router as youtube_router
 from controllers.audio_controller import router as audio_router
+from controllers.otp_controller import router as otp_router
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -15,6 +16,7 @@ app.include_router(program_router, prefix="/api")
 app.include_router(streaming_router, prefix="/api")
 app.include_router(youtube_router, prefix="/api")
 app.include_router(audio_router, prefix="/api")
+app.include_router(otp_router, prefix="/api")
 
 if __name__ == "__main__":
     import uvicorn
