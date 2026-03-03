@@ -1,13 +1,13 @@
 import os
-import re
-import json
-import requests
+import logging
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from entities.youtube_dakwah_streaming_entity import YoutubeDakwahStreamingEntity
 from repositories.youtube_dakwah_streaming_repository import YoutubeDakwahStreamingRepository
 
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 class YoutubeDakwahStreamingService:
     @staticmethod
@@ -17,20 +17,16 @@ class YoutubeDakwahStreamingService:
             'User-Agent': os.getenv('USER_AGENT'),
             'Accept-Encoding': os.getenv('ACCEPT_ENCODING')
         }
-        
-        session = requests.Session()
-        session.headers.update(headers)
-        if 'Accept-Encoding' in session.headers:
-            del session.headers['Accept-Encoding']
-            
+
+        session = YoutubeDakwahStreamingRepository.create_session(headers)
         html_content = YoutubeDakwahStreamingRepository.get_youtube_html(session, url)
-        
+
         youtube_url = None
         title = None
 
         if html_content:
             soup = BeautifulSoup(html_content, 'html.parser')
-            
+
             iframes = soup.find_all('iframe')
             for iframe in iframes:
                 src = iframe.get('src')
@@ -45,10 +41,10 @@ class YoutubeDakwahStreamingService:
                         youtube_url = f"{base_url}{video_id}"
                     else:
                         youtube_url = src
-                    
+
                     title = iframe.get('title')
                     break
-                    
+
             if not youtube_url:
                 links = soup.find_all('a')
                 for a in links:
@@ -60,34 +56,18 @@ class YoutubeDakwahStreamingService:
                             title = a.get_text(strip=True) or (a.get('title'))
                             if title and len(title) > 3:
                                 break
-                            
+
             if not title and youtube_url:
                 title = "MQFM Live YouTube Stream"
-                
-            if youtube_url:
-                yt_html = YoutubeDakwahStreamingRepository.validate_youtube_live_status(session, youtube_url)
-                if yt_html:
-                    is_currently_live = False
-                    
-                    match = re.search(r'ytInitialPlayerResponse\s*=\s*({.+?});', yt_html)
-                    if match:
-                        data = json.loads(match.group(1))
-                        
-                        video_details = data.get('videoDetails', {})
-                        if video_details.get('isLiveContent', False):
-                            microformat = data.get('microformat', {}).get('playerMicroformatRenderer', {})
-                            live_details = microformat.get('liveBroadcastDetails', {})
-                            
-                            is_currently_live = live_details.get('isLiveNow', False)
-                            
-                            yt_title = video_details.get('title', '')
-                            if yt_title:
-                                title = yt_title
 
-                    if not is_currently_live:
-                        youtube_url = None
-                        title = None
+            if youtube_url:
+                live_info = YoutubeDakwahStreamingRepository.validate_youtube_live_with_ytdlp(youtube_url)
+
+                if live_info and live_info.get('is_live'):
+                    title = live_info.get('title', title)
+                    youtube_url = live_info.get('url', youtube_url)
                 else:
+                    logger.info(f"YouTube tidak sedang live berdasarkan yt-dlp: {youtube_url}")
                     youtube_url = None
                     title = None
 

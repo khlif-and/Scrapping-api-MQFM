@@ -1,5 +1,6 @@
 import logging
 import requests
+import yt_dlp
 from fastapi import HTTPException
 from redis_client import get_cache, set_cache
 
@@ -24,6 +25,14 @@ class YoutubeDakwahStreamingRepository:
             return False
 
     @staticmethod
+    def create_session(headers: dict) -> requests.Session:
+        session = requests.Session()
+        session.headers.update(headers)
+        if 'Accept-Encoding' in session.headers:
+            del session.headers['Accept-Encoding']
+        return session
+
+    @staticmethod
     def get_youtube_html(session: requests.Session, url: str):
         try:
             response = session.get(url, timeout=10)
@@ -46,12 +55,32 @@ class YoutubeDakwahStreamingRepository:
             raise HTTPException(status_code=500, detail="Terjadi kesalahan internal pada pencarian modul YouTube di API.")
 
     @staticmethod
-    def validate_youtube_live_status(session: requests.Session, youtube_url: str):
+    def validate_youtube_live_with_ytdlp(youtube_url: str) -> dict | None:
         try:
-            yt_resp = session.get(youtube_url, timeout=10)
-            if yt_resp.status_code == 200:
-                return yt_resp.text
+            ydl_opts = {
+                'quiet': True,
+                'no_warnings': True,
+                'skip_download': True,
+                'extract_flat': False,
+            }
+
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                info = ydl.extract_info(youtube_url, download=False)
+
+                if info:
+                    is_live = info.get('is_live', False)
+                    title = info.get('title', '')
+                    webpage_url = info.get('webpage_url', youtube_url)
+
+                    logger.info(f"yt-dlp result - is_live: {is_live}, title: {title}")
+
+                    return {
+                        'is_live': is_live,
+                        'title': title,
+                        'url': webpage_url
+                    }
+
             return None
         except Exception as e:
-            logger.warning(f"Error validasi live status YouTube: {e}")
+            logger.warning(f"yt-dlp gagal validasi live status YouTube: {e}")
             return None
