@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
 @dataclass
-class ProgramEntity:
+class ProgramAndAddsEntity:
     title: str
     image_url: str

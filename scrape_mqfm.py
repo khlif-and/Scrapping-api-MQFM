@@ -1,9 +1,51 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import redis
+
+# Inisialisasi koneksi Redis
+# Secara default untuk local development: host='localhost', port=6379, db=0
+cache = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+
+def tampilkan_data(programs, konten_artikel):
+    # Menampilkan Data
+    print("\n=== INFORMASI SALURAN RADIO ===")
+    print("Nama Saluran: 102.7 MQFM Bandung")
+    print("Tagline: Inspirasi Keluarga Indonesia")
+    print("Website: https://mqfmnetwork.com/")
+    
+    print("\n=== JADWAL PROGRAM RADIO ===")
+    if programs:
+        for i, p in enumerate(programs, 1):
+            print(f"{i}. {p['program']} ({p['jadwal']})")
+    else:
+        print("Jadwal program spesifik tidak ditemukan di halaman utama secara langsung.")
+        print("Biasanya jadwal siaran live dapat dilihat secara dinamis di halaman web atau melalui aplikasi khusus.")
+
+    print(f"\n=== KONTEN/ARTIKEL DITEMUKAN ({len(konten_artikel)}) ===")
+    for i, k in enumerate(konten_artikel, 1):
+        print(f"{i}. {k['judul']}")
+        print(f"   Link: {k['link']}")
+        if i >= 10: # Batasi tampilan hanya 10 konten pertama
+            print(f"   ... dan {len(konten_artikel) - 10} konten lainnya.")
+            break
 
 def scrape_mqfm_programs():
     url = 'https://mqfmnetwork.com/'
+    cache_key = 'mqfm_data_cache'
+
+    # Coba ambil data dari cache Redis
+    try:
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            print("--> Mengambil data dari Redis Cache (Lebih Cepat!)...")
+            data = json.loads(cached_data)
+            tampilkan_data(data.get('programs', []), data.get('konten_artikel', []))
+            return
+    except redis.ConnectionError:
+        print("--> Warning: Redis server tidak dapat dihubungi. Mengambil dari web langsung...")
+    except Exception as e:
+        print(f"--> Warning: Terjadi kesalahan saat membaca cache: {e}")
     
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -11,7 +53,7 @@ def scrape_mqfm_programs():
     }
     
     try:
-        print(f"Mengambil data program dari {url}...")
+        print(f"--> Mengambil data program dari {url} secara langsung...")
         response = requests.get(url, headers=headers)
         response.raise_for_status()
         
@@ -48,27 +90,19 @@ def scrape_mqfm_programs():
             if judul and link and {'judul': judul, 'link': link} not in konten_artikel:
                 konten_artikel.append({'judul': judul, 'link': link})
 
-        # Menampilkan Data
-        print("\n=== INFORMASI SALURAN RADIO ===")
-        print("Nama Saluran: 102.7 MQFM Bandung")
-        print("Tagline: Inspirasi Keluarga Indonesia")
-        print("Website: https://mqfmnetwork.com/")
-        
-        print("\n=== JADWAL PROGRAM RADIO ===")
-        if programs:
-            for i, p in enumerate(programs, 1):
-                print(f"{i}. {p['program']} ({p['jadwal']})")
-        else:
-            print("Jadwal program spesifik tidak ditemukan di halaman utama secara langsung.")
-            print("Biasanya jadwal siaran live dapat dilihat secara dinamis di halaman web atau melalui aplikasi khusus.")
+        # Simpan ke Redis Cache dengan waktu kedaluwarsa (1 jam / 3600 detik)
+        data_to_cache = {
+            'programs': programs,
+            'konten_artikel': konten_artikel
+        }
+        try:
+            cache.setex(cache_key, 3600, json.dumps(data_to_cache))
+            print("--> Data berhasil disimpan ke Redis Cache selama 1 Jam.")
+        except redis.ConnectionError:
+            pass
 
-        print(f"\n=== KONTEN/ARTIKEL DITEMUKAN ({len(konten_artikel)}) ===")
-        for i, k in enumerate(konten_artikel, 1):
-            print(f"{i}. {k['judul']}")
-            print(f"   Link: {k['link']}")
-            if i >= 10: # Batasi tampilan hanya 10 konten pertama
-                print(f"   ... dan {len(konten_artikel) - 10} konten lainnya.")
-                break
+        # Tampilkan data
+        tampilkan_data(programs, konten_artikel)
 
     except requests.exceptions.RequestException as e:
         print(f"Terjadi kesalahan saat mengambil halaman web: {e}")
