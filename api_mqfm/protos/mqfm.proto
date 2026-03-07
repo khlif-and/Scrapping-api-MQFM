@@ -1,0 +1,102 @@
+syntax = "proto3";
+
+package mqfm;
+
+message Empty {}
+
+message ProgramItem {
+  string program = 1;
+  string schedule = 2;
+}
+
+message ContentItem {
+  string title = 1;
+  string link = 2;
+  string image = 3;
+}
+
+message ArtikelDakwahMqResponse {
+  string channel_name = 1;
+  string tagline = 2;
+  string website = 3;
+  repeated ProgramItem programs = 4;
+  repeated ContentItem contents = 5;
+}
+
+message AudioTrack {
+  string title = 1;
+  string mp3_url = 2;
+  string duration = 3;
+}
+
+message AudioProgram {
+  string title = 1;
+  string image_url = 2;
+  string page_url = 3;
+  repeated AudioTrack tracks = 4;
+}
+
+message AudioDakwahMqResponse {
+  repeated AudioProgram programs = 1;
+}
+
+message AudioDakwahStreamingResponse {
+  string current_program = 1;
+  string schedule = 2;
+  string up_next_program = 3;
+  string up_next_schedule = 4;
+  string audio_url = 5;
+}
+
+message YoutubeDakwahStreamingResponse {
+  string youtube_url = 1;
+  string title = 2;
+}
+
+message ProgramAndAddsItem {
+  string title = 1;
+  string image_url = 2;
+}
+
+message ProgramAndAddsResponse {
+  repeated ProgramAndAddsItem programs = 1;
+}
+
+message GenerateOTPRequest {
+  string email = 1;
+}
+
+message VerifyOTPRequest {
+  string email = 1;
+  string otp_code = 2;
+}
+
+message OTPResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+service ArtikelDakwahMqGrpc {
+  rpc GetArtikelDakwahMq(Empty) returns (ArtikelDakwahMqResponse);
+}
+
+service AudioDakwahMqGrpc {
+  rpc GetAudioDakwahMq(Empty) returns (AudioDakwahMqResponse);
+}
+
+service AudioDakwahStreamingGrpc {
+  rpc GetAudioDakwahStreaming(Empty) returns (AudioDakwahStreamingResponse);
+}
+
+service YoutubeDakwahStreamingGrpc {
+  rpc GetYoutubeDakwahStreaming(Empty) returns (YoutubeDakwahStreamingResponse);
+}
+
+service ProgramAndAddsGrpc {
+  rpc GetProgramAndAdds(Empty) returns (ProgramAndAddsResponse);
+}
+
+service OTPGrpc {
+  rpc GenerateOTP(GenerateOTPRequest) returns (OTPResponse);
+  rpc VerifyOTP(VerifyOTPRequest) returns (OTPResponse);
+}

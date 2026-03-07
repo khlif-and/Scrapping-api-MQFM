@@ -1,6 +1,0 @@
-from pydantic import BaseModel
-from typing import Optional
-
-class YoutubeDakwahStreamingResource(BaseModel):
-    youtube_url: Optional[str] = None
-    title: Optional[str] = None
